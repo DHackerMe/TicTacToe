@@ -25,7 +25,11 @@ while do!="N":
     print(f"{S}{chr(95)*11}\n{S}|{p1}{p2}{p3}|\n{S}|{p4}{p5}{p6}|\n{S}|{p7}{p8}{p9}|\n{S}{chr(175)*11}")
     if p1==p2==p3!=N or p4==p5==p6!=N or p7==p8==p9!=N or p1==p4==p7!=N or p2==p5==p8!=N or p3==p6==p9!=N or p1==p5==p9!=N or p1==p4==p7!=N or p3==p5==p7!=N:
       count-=1
-      print(f"\nThe winner is {XorO()[1:2]}\n")
+      print(f"\nThe winner is {XorO()[1:2]} !\n")
+      do=input("Reset? (Y/n): ").upper()
+      break
+    if p1!=N and p2!=N and p3!=N and p4!=N and p5!=N and p6!=N and p7!=N and p8!=N and p9!=N:
+      print("It's a draw!\n")
       do=input("Reset? (Y/n): ").upper()
       break
     user_input=int(input(f"\nChoose a position for {XorO()[1:2]} (1 - 9): "))
