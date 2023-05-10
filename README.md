@@ -23,7 +23,7 @@ sudo apt install git
 Once you have Git installed, navigate to the directory where the game is installed and execute the 'Update.sh' script using the following command:
 
 ```
-bash Update.sh
+bash update.sh
 ```
 
 This will pull the latest version of the game from the repository and update your local version.
