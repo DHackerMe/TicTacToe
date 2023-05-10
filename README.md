@@ -20,7 +20,7 @@ To update the game to the latest version, make sure you have Git installed on yo
 sudo apt install git
 ```
 
-Once you have Git installed, navigate to the directory where the game is installed and execute the 'Update.sh' script using the following command:
+Once you have Git installed, navigate to the directory where the game is installed and execute the 'update.sh' script using the following command:
 
 ```
 bash update.sh
@@ -36,9 +36,9 @@ The code for this project was written by DHackerMe, based on the classic game of
 
 # Changelog
 ## v1.1 (10/05/2023)
-Added the draw condition to the game.
-Added the update script for manual updates of the game.
-Added an appropriate README.
+- Added the draw condition to the game.
+- Added the update script for manual updates of the game.
+- Added an appropriate README.
 
 ## v1.0 (06/05/2023)
-Initial release.
+- Initial release.
