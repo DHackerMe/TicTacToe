@@ -35,6 +35,13 @@ This project is licensed under the terms of the GPL v3 license.
 The code for this project was written by DHackerMe, based on the classic game of Tic Tac Toe.
 
 # Changelog
+## v1.2 (14/05/2023)
+- Added a 'bot' that places marks randomly.
+- Added a simple menu with three options:
+  - Play against another player.
+  - Play against the 'bot'.
+  - Exit the game.
+
 ## v1.1 (10/05/2023)
 - Added the draw condition to the game.
 - Added the update script for manual updates of the game.
