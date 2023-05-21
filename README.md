@@ -1,5 +1,5 @@
 # Tic Tac Toe
-Tic Tac Toe game implemented in Python. The game is designed to run on a Linux-like environment, and compatibility with Windows will be added soon.
+Tic Tac Toe game implemented in Python. The game is designed to run on a Linux-like environment, now compatibile with Windows.
 
 ## Installation
 To run the game, first make sure you have Python 3 installed on your system. If you don't have it installed, you can download it from the official Python website: https://www.python.org/downloads/.
@@ -35,6 +35,10 @@ This project is licensed under the terms of the GPL v3 license.
 The code for this project was written by DHackerMe, based on the classic game of Tic Tac Toe.
 
 # Changelog
+## v1.3 (21/05/2023)
+- Added compatibility with Windows operating system.
+- Optimized the code.
+
 ## v1.2 (14/05/2023)
 - Added a 'bot' that places marks randomly.
 - Added a simple menu with three options:
