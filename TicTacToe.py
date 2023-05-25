@@ -1,6 +1,6 @@
 import os; import random; import platform
 
-def title(): print(" _____ _     _____  v1.3   _____ by DHMe\n|_   _(_) __|_   ___ _  __|_   ____   ___\n  | | | |/ __|| |/ _` |/ __|| |/ _ \ / _ \\\n  | | | | (__ | | (_| | (__ | | (_) |  __/\n  |_| |_|\___||_|\__,_|\___||_|\___/ \___|\n")
+def title(): print(" _____ _     _____  v1.4   _____ by DHMe\n|_   _(_) __|_   ___ _  __|_   ____   ___\n  | | | |/ __|| |/ _` |/ __|| |/ _ \ / _ \\\n  | | | | (__ | | (_| | (__ | | (_) |  __/\n  |_| |_|\___||_|\__,_|\___||_|\___/ \___|\n")
 
 def board(): print(f"{' '*15}{chr(95)*11}\n{' '*15}|{p1}{p2}{p3}|\n{' '*15}|{p4}{p5}{p6}|\n{' '*15}|{p7}{p8}{p9}|\n{' '*15}{chr(175)*11}")
 
@@ -22,7 +22,7 @@ O = " O "
 while True:
   clear()
   
-  if 'do' in locals() and do == "N": del count
+  if 'do' and 'count' in locals() and do == "N": del count
   
   if not 'count' in locals():
     title()
@@ -45,7 +45,9 @@ while True:
         print("It's a draw!\n")
         do=input("Reset? (Y/n): ").upper()
         break
-      num=int(input(f"\nChoose a position for {XorO()[1:2]} (1 - 9): "))
+      num=input(f"\nChoose a position for {XorO()[1:2]} (1 - 9): ")
+      try: num=int(num)
+      except: None
       if num == 1 and p1==N: p1=XorO(); count+=1
       if num == 2 and p2==N: p2=XorO(); count+=1
       if num == 3 and p3==N: p3=XorO(); count+=1
@@ -73,7 +75,9 @@ while True:
         do=input("Reset? (Y/n): ").upper()
         break
       if XorO()[1:2] == "X":
-        num=int(input(f"\nChoose a position (1 - 9): "))
+        num=input(f"\nChoose a position (1 - 9): ")
+        try: num=int(num)
+        except: None
       if XorO()[1:2] == "O":
         num = random.randint(1,9)
       if num == 1 and p1==N: p1=XorO(); count+=1
