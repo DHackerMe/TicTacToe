@@ -35,6 +35,9 @@ This project is licensed under the terms of the GPL v3 license.
 The code for this project was written by DHackerMe, based on the classic game of Tic Tac Toe.
 
 # Changelog
+## v1.4 (25/05/2023)
+- Fixed some known bugs.
+
 ## v1.3 (21/05/2023)
 - Added compatibility with Windows operating system.
 - Optimized the code.
